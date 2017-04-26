@@ -22,3 +22,5 @@ de processamento a ser importada e executada pela fog.
 
 Mas esse metodo seria igual a criar um caminho reverso, entao achei que nao
 era o requisitado, apesar de pessoalmente achar mais elegante.
+
+Fiz esse README.md correndo. Vou comentar os arquivos ainda
