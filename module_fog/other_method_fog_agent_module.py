@@ -67,14 +67,20 @@ class S(BaseHTTPRequestHandler):
                                             	keep_blank_values=1)
 
 	
+	if (postvars['type'][0] == 'cloud'):
+		module = Modules.Module(postvars)
+			if (postvars['module'][0] == 'delete_data'):
+				module.delete_data()
+			elif (postvars['module'][0] == 'media_measure'):
+				media_nr_measure = module.media_measure(postvars['measure'][0])
+			else:
+				pass
+	else:
+		pass
+
     	input_batches['node_id'] = postvars['node_id'][0]
     	for line in postvars['load']:
         	tmp = line.split('\n')
-
-    	#delete data with defective date
-    	
-	
-	controller2.controller(postvars)
 		                
     	input_batches['type'] = str(postvars['type'][0])
     	input_batches['header'] = str(postvars['header'][0])
