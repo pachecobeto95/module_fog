@@ -23,4 +23,11 @@ de processamento a ser importada e executada pela fog.
 Mas esse metodo seria igual a criar um caminho reverso, entao achei que nao
 era o requisitado, apesar de pessoalmente achar mais elegante.
 
+Outro metodo trata-se de execução de script de cliente executado pelo adm 
+do sistema para enviar uma mensagem a Fog. Aproveitando o fato que a Fog ja ta
+funcionando como servidor recebendo mensagens. Essa mensagem contem outro type. 
+Assim que identifica o type "cloud" no corpo da mensagem. A fog procura outros parametros 
+no corpo da mensagem pra executar o modulo ordenado. O adm do sistema entra com os dados 
+de qual modulo de processamento atraves de parametros na execuçao do codigo cliente.
+
 Fiz esse README.md correndo. Vou comentar os arquivos ainda
