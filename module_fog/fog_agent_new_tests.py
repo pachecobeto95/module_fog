@@ -15,8 +15,7 @@ import time
 import datetime
 import threading, Queue
 import sys
-import controller_test
-import controller2
+
 
 signal(SIGPIPE, SIG_DFL)
 
@@ -50,7 +49,7 @@ def cloud_client(payload):
                     json=payload,
                     verify=SERVER_CERTS,
                     cert=(LOCAL_CERTIFICATE, PRIMARY_KEY))
-    print r
+
 
 class S(BaseHTTPRequestHandler):
     def _set_headers(self): 
@@ -71,10 +70,6 @@ class S(BaseHTTPRequestHandler):
     	for line in postvars['load']:
         	tmp = line.split('\n')
 
-    	#delete data with defective date
-    	
-	
-	controller2.controller(postvars)
 		                
     	input_batches['type'] = str(postvars['type'][0])
     	input_batches['header'] = str(postvars['header'][0])

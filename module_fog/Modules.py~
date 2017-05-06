@@ -14,6 +14,7 @@ class Module(object):
 
 	def media_measure(self, measure):
 		contador = 0
+		print "oi mundao"
 		for line in self.postvars['header']:
                 	vect = line.split(",")
                 	for var in vect:
