@@ -1,4 +1,10 @@
-def cartridge(tmp):
+#Authors:Roberto Pacheco
+#Universidade do Estado do Rio de Janeiro
+#Departamento de Eletronica e Telecomunicacoes (DETEL)
+#Project: SensingBus: Pre-processing Module
+#Subject: 
+
+def cartridge(tmp): #delete the defective data, do the last line always empty 
 	delete_list = []
 	for i in range(len(tmp)):
 		if (tmp[i][0:-1] == 0):
