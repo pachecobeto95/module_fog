@@ -1,3 +1,9 @@
+#Authors:Roberto Pacheco
+#Universidade do Estado do Rio de Janeiro
+#Departamento de Eletronica e Telecomunicacoes (DETEL)
+#Project: SensingBus
+#Subject: Send the preprocessing module to the Fog by SSH protocol. 
+
 import os
 import sys
 
