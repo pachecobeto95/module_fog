@@ -1,3 +1,9 @@
+#Author:Roberto Pacheco
+#Universidade do Estado do Rio de Janeiro
+#Departamento de Eletronica e Telecomunicacoes (DETEL)
+#Project: SensingBus: Remote management of the pre-processing modules
+#Subject: Testting the comunication between the administrator and fog to Remote management of the pre-processing modules
+
 def cloud_client(ip, port):
 	import requests
 	#import json
